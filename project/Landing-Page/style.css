@@ -1,0 +1,413 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #1abc9c;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #1abc9c;
+    --bs-secondary: #2c3e50;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 26, 188, 156;
+    --bs-secondary-rgb: 44, 62, 80;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #1571cc;
+    --bs-body-bg: #fff;
+  }
+
+body {
+    background-color: rgb(73, 73, 73);;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 14px 10px;
+}
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+    
+li {
+    float: left;
+}
+    
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+    
+li.dropdown, .home, .Jurusan, .Galeri {
+    padding: 5px;
+    margin-top: 5px;
+    z-index: 100;
+    border-radius: 25px;
+}
+ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+    
+.dropdown-content a {
+    color: white;
+    background-color: #313131; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+    
+.dropdown-content a:hover {
+    background-color: #9e9e9e;
+    transition: background-color 0.3s ease-out;
+    color: black;
+    cursor: pointer;
+}
+    
+.dropdown:hover .dropdown-content {
+    display:block ;
+}
+
+.navi{
+    padding-left: 10px;
+    background: rgb(34, 34, 34);
+    height: auto;
+    margin-top: -70px;
+    width: 50000px;
+    margin-left: -20px;
+    position: fixed;
+}
+
+.navi .dropbtn img {
+    margin-left: 5px;
+}
+
+#navigasi .home, .Galeri, .Jurusan {
+    margin-top: 5px;
+    border-radius: 25px;
+    padding: 5px;
+    transition: background-color 0.3s ease-out;
+}
+
+#navigasi:hover .home:hover, .dropdown:hover, .Galeri:hover, .Jurusan:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(95, 95, 95);
+}
+
+#pageintro {
+    padding: 100px;
+    margin-left: -10px;
+    background-image: url(background.jpg);
+    margin-top: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pageintro section {
+    display: block;
+    margin-left: 50px;
+}
+
+.hoc-clear section h3 {
+    font-size: 60px;
+    font-family: 'arial';
+    color: rgb(255, 255, 255);
+}
+
+.hoc-clear section p {
+    padding-bottom: 30px;
+    font-size: 25px;
+    margin-top: -30px;
+    border-radius: 10px;
+    font-family: 'arial';
+    color: white;
+}
+
+.hoc-clear section .btn_m {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    border-radius: 50px;
+    border: 2px solid rgb(15, 219, 226);
+    color: rgb(255, 255, 255);
+}
+
+
+#pageintro .btn_m:hover {
+    background-color: rgb(15, 219, 226);
+    border-radius: 50px;
+    color: rgb(29, 29, 29);
+}
+
+#pageintro footer .btn_j {
+    background-color: rgb(255, 255, 255);
+    border-radius: 60px;
+    color: black;
+}
+
+
+#pageintro footer .btn_j:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.z {
+    margin-top: 100px;
+    display: flex;
+    background-color: rgb(46, 46, 46); 
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.zx {
+    margin-top: 135px;
+}
+
+.tentang {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    font-family: 'arial';
+    padding: 25px;
+    text-align: left;
+    margin-top: 200px;
+    font-size: 17px;
+    border: 2px solid white;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 15px;
+    margin-bottom: 170px;
+}
+
+.info .Informasi {
+    padding: 20px;
+    padding-top: -200px;
+}
+
+.info .informasi {
+    display: flex;
+    padding-top: 20px;
+}
+
+.info .informasi .siswa {
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.info .informasi .guru {
+    margin-left: 130px;
+    padding: 5px;
+}
+
+.info .informasi .prestasi {
+    margin-left: 130px;
+    padding: 5px;
+}
+
+.Visimisi {
+    color: white;
+    font-family: 'arial';
+    padding: 40px;
+    padding-bottom: 80px;
+    margin-left: 20px;
+    text-align: left;
+    margin-top: 200px;
+    border: 2px solid white;
+    font-size: 17px;
+    margin-right: 15px;
+    margin-bottom: 170px;
+}
+
+.ProfilPimpinan {
+    color: white;
+    padding: 2px;
+    background-color: rgb(46, 46, 46);
+    font-family: 'arial';
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.bg {
+    background-color: rgb(46, 46, 46);
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.pimpinan {
+    background-color: rgb(46, 46, 46);
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+    font-family:'arial';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+    border: 2px solid white;
+}
+
+.pimpinan .kepsek {
+    padding: 15px;
+}
+
+.galeri {
+    margin-top: 250px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(73, 73, 73);
+    font-family: Arial;
+    margin-bottom: 100px;
+}
+
+.galeri h2 {
+    background-color: rgb(46, 46, 46); 
+    padding: 10px;
+    margin-left: -8px;
+    margin-right: -8px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.galeri .foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeri .foto img {
+    margin: 5px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.judul {
+    color: white;
+    font-family: 'arial';
+    background-color: rgb(46, 46, 46);
+    margin-top: 200px;
+    border: 2px solid rgb(255, 255, 255);
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'arial';
+    padding: 10px;
+}
+
+.card .cardbody h3 {
+    text-align: center;
+}
+
+.card .cardbody2 h3 {
+    text-align: center;
+}
+
+.card .cardbody {
+    font-family: 'arial';
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 5px;
+    text-align: justify;
+    border: 2px solid white;
+}
+
+.footer {
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    background-color: rgb(46, 46, 46);
+    text-align: left;
+    display: flex;
+    font-family: 'Arial';
+    height: 300px;
+}
+
+.footer .foot-info {
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 400px;
+}
+
+.footer h2 {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.footer .contact {
+    margin-top: 30px;
+    margin-right: 300px;
+}
+
+#galeri {
+    margin-top: 150px;
+}
+
+.copyright {
+    font-family: 'arial';
+    color: white;
+}
