@@ -1266,11 +1266,6 @@ blockquote {
     padding: 0;
   }
 
-  #about .div-img-bg .about-img img {
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);
-  }
-
   #about .about-descr .p-heading {
     font-size: 20px;
   }
