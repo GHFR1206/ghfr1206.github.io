@@ -463,7 +463,7 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/background.webp") repeat scroll center center/cover;
+  background: url("../img/background.png") repeat scroll center center/cover;
   background-attachment: fixed;
   height: 100vh;
   width: 100%;
